@@ -1,0 +1,30 @@
+
+:root{
+    --w-prfle-cont:250px;
+    --w-msg-cont:730px;
+    --w-chat-list:300px;
+}
+
+:root{
+    --br-radius-sm:5px;
+    --br-radius-lm:10px;
+    --br-radius-full:50%;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:var(--c-white-grey-10);
+    border-radius: 4px;
+}
+.input{
+    width: 100%;
+    padding-left: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--c-dark-grey);
+}
+

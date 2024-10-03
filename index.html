@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Chat-App" />
+		<meta name="keywords" content="Chatapps, HTML CSS Landing Page" />
+		<meta name="author" content="Thillai" />
+		<title>Chat-App</title>
+
+		<!-- tittle-icon -->
+		<link rel="icon" href="/images/fevicon.svg" />
+
+		<!-- box-icons -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<!-- CSS -->
+
+		<!-- common-style -->
+		<link rel="stylesheet" href="./css/colors.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/global-value.css" />
+		<link rel="stylesheet" href="./css/flex.css" />
+		<link rel="stylesheet" href="./css/style-bits.css" />
+		<link rel="stylesheet" href="./css/font.css" />
+		<link rel="stylesheet" href="./css/animation.css" />
+
+		<!-- component-style -->
+		<link rel="stylesheet" href="./css/home.css" />
+		<link rel="stylesheet" href="./css/typography.css" />
+		<link rel="stylesheet" href="./css/colors.css" />
+		<link rel="stylesheet" href="./css/profile-cont.css" />
+		<!-- CSS -->
+		
+	</head>
+	<body>
+		<div class="app-container">
+			<!-- profile-container -->
+			<aside class="profile-container">
+				<div class="profile-cont-header D-flx AI-C G-15 c-white mB40 fw700">
+					<div class="show-online"></div>
+					<span>Chatapps</span>
+				</div>
+
+				<div class="side-prof">
+					<div class="prof-img-cont mB20 m-auto">
+						<img class="profile-img" src="./images/p1c.jpg" alt="profile/img" />
+					</div>
+					<div class="Ta-c">
+						<h4 class="c-white mB4">Harry Potter</h4>
+						<span class="f14">+637402087</span>
+					</div>
+				</div>
+				<div class="profile-setting">
+					<div class="mB20">
+						<h5 class="mB4">E-mail</h5>
+						<span class="c-white">harryjam6@gmail.com</span>
+					</div>
+
+					<div class="mB20 status">
+						<h5 class="mB4">Status</h5>
+						<span class="c-white">Product Designer</span>
+					</div>
+
+					<div class="icon-grps">
+						<ul class="grp-1">
+							<li class="profile-cont-list">
+								<div class="msg-bg mB10">
+									<div class="D-flx AI-C G-10">
+										<i class="bx bx-message-alt-detail f18"></i>
+										<span>Message</span>
+									</div>
+									<div>
+										<div class="msg-count"><span class="c-white f12">14</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="profile-cont-list">
+								<a class="profile-cont-link" href="">
+									<div class="D-flx AI-C G-10">
+										<i class="bx bxs-key f20"></i>
+										<span>Privacy &#38; Security</span>
+									</div>
+								</a>
+							</li>
+							<li class="profile-cont-list">
+								<a class="profile-cont-link" href="">
+									<div class="D-flx AI-C G-10">
+										<i class="bx bx-cog f20"></i>
+										<span>Settings</span>
+									</div>
+								</a>
+							</li>
+
+							<li class="profile-cont-list">
+								<a class="profile-cont-link" href="">
+									<div class="D-flx AI-C G-10">
+										<i class="bx bxl-upwork f20"></i>
+										<span>Language</span>
+									</div>
+								</a>
+							</li>
+
+							<li class="profile-cont-list">
+								<a class="profile-cont-link" href="">
+									<div class="D-flx JC-SB AI-C">
+										<div class="D-flx AI-C G-10">
+											<i class="bx bx-moon f20"></i>
+											<span>Dark</span>
+										</div>
+										<div class="dark-switch" id="darkSwitch" onclick="dark(event)"></div>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<div class="icon-grp-2">
+							<ul class="">
+								<li class="profile-cont-list">
+									<a class="profile-cont-link" href="">
+										<div class="D-flx JC-SB AI-C">
+											<div class="D-flx AI-C G-10">
+												<i class="bx bx-archive-in f20"></i>
+												<span>Archived</span>
+											</div>
+											<div class="msg-count"><span class="c-white f12">4</span></div>
+										</div>
+									</a>
+								</li>
+
+								<li class="profile-cont-list">
+									<a class="profile-cont-link" href="">
+										<div class="D-flx JC-SB AI-C">
+											<div class="D-flx AI-C G-10">
+												<i class="bx bx-trash f20"></i>
+												<span>Trash</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!-- ////profile-container -->
+
+			<!-- msg-container -->
+			<div class="app-chat-container">
+				<section class="msg-container">
+					<header class="msg-header">
+						<div class="msg-header-one">
+							<div><h4 class="defalut-tittle">Messages</h4></div>
+							<div class="D-flx G-10">
+								<div class="search-cont-1">
+									<div>
+										<span class="search-icon"><i class="bx bx-search f18"></i></span>
+									</div>
+									<input class="search-input" type="serach" placeholder="Search" />
+								</div>
+								<div>
+									<div class="icon-bg-green">
+										<span class="c-white"> <i class="bx bx-comment-add f18"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header-two">
+							<div class="D-flx G-8 AI-C">
+								<div class="prof-img-cont">
+									<img class="profile-img" src="./images/p2.jpg" alt="profile/img" />
+								</div>
+								<div>
+									<h5 class="defalut-tittle">Dumbledoor</h5>
+
+									<div class="online-alert"><span class="f12 pL7">Online</span></div>
+								</div>
+							</div>
+
+							<div>
+								<ul class="header-icon-lists">
+									<li class="header-icon-list">
+										<a class="header-icon-link" href="">
+											<i class="bx bx-search f20"></i>
+										</a>
+									</li>
+									<li class="header-icon-list">
+										<a class="header-icon-link" href="">
+											<i class="bx bx-phone f20"></i>
+										</a>
+									</li>
+									<li class="header-icon-list">
+										<a class="header-icon-link" href="">
+											<i class="bx bx-video f20"></i>
+										</a>
+									</li>
+									<li class="header-icon-list">
+										<a class="header-icon-link" href="">
+											<i class="bx bx-dots-vertical-rounded f20"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</header>
+
+					<div class="converstaion-box">
+						<div class="Ta-c mB20">
+							<span class="chat-day-alret">Monday,15April2024</span>
+						</div>
+
+						<ul>
+							<li>
+								<div class="recived-msg">
+									<p class="msg-conversaion mB5 f14 c-black">I have updated the last task, Please check.the last task emtylast</p>
+									<div class="D-flx JC-SB">
+										<div class="conv-img-cont D-flx AI-C G-5">
+											<img class="conv-img" src="./images/p2.jpg" alt="profile/img" />
+											<span class="f10">Dumbledoor</span>
+										</div>
+										<div><span class="time f10">09.12AM</span></div>
+									</div>
+								</div>
+							</li>
+
+							<li class="D-flx JC-FE">
+								<div class="my-msg">
+									<p class="msg-conversaion-opp mB5 f14 c-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corrupti excepturi labore repellendus officia explicabo distinctio voluptatibus ipsum rem temporibus eveniet voluptate illo dolorum blanditiis neque quasi, asperiores enim sunt.
+									</p>
+
+									<div class="D-flx JC-SB">
+										<div class="D-flx AI-C">
+											<span class="time f10">09.12AM </span><span><i class="bx bx-check-double f18 c-blue"></i></span>
+										</div>
+										<div class="D-flx AI-C G-5">
+											<div>
+												<span class="f10">You</span>
+											</div>
+											<div class="conv-img-cont">
+												<img class="conv-img" src="./images/p2.jpg" alt="profile/img" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="recived-msg">
+									<p class="msg-conversaion f14 mB5 c-black">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, u labore ut dolore iste nesciunt adipisci cum iusto error!
+									</p>
+									<div class="D-flx JC-SB">
+										<div class="conv-img-cont D-flx AI-C G-5">
+											<img class="conv-img" src="./images/p2.jpg" alt="profile/img" />
+											<span class="f10">Dumbledoor</span>
+										</div>
+										<div><span class="time f10">09.12AM</span></div>
+									</div>
+								</div>
+							</li>
+
+							<li class="D-flx JC-FE">
+								<div class="my-msg">
+									<p class="msg-conversaion-opp mB5 f14 c-white">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reprehenderit error optio et accusantium nam voluptatibus  fugit ipsa earum iste. Aliquid consectetur in distinctio.
+									</p>
+
+									<div class="D-flx JC-SB">
+										<div class="D-flx AI-C">
+											<span class="time f10">09.12AM </span><span><i class="bx bx-check-double f18 c-blue"></i></span>
+										</div>
+										<div class="D-flx AI-C G-5">
+											<div>
+												<span class="f10">You</span>
+											</div>
+											<div class="conv-img-cont">
+												<img class="conv-img" src="/images/p2.jpg" alt="profile/img" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="mB20">
+								<div class="recived-img-cont"><img class="recived-img" src="./images/images.jpeg" alt="" /></div>
+							</li>
+							<li class="mB10">
+								<div class="recived-img-cont"><img class="recived-img" src="./images/images.jpeg" alt="" /></div>
+							</li>
+
+							<li>
+								<div class="recived-msg">
+									<p class="msg-conversaion mB5 f14 c-black">I have updated the last task, Please check.the last task emtylast</p>
+									<div class="D-flx JC-SB">
+										<div class="conv-img-cont D-flx AI-C G-5">
+											<img class="conv-img" src="./images/p2.jpg" alt="profile/img" />
+											<span class="f10">Dumbledoor</span>
+										</div>
+										<div><span class="time f10">09.12AM</span></div>
+									</div>
+								</div>
+							</li>
+
+							<li class="D-flx JC-FE">
+								<div class="my-msg">
+									<p class="msg-conversaion-opp mB5 f14 c-white">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptas ipsam explicabo ipsa perferendis corrupti ratione enim eos totam earum eaque fugit id, eius itaque similique qui dolores consectetur assumenda.
+									</p>
+
+									<div class="D-flx JC-SB">
+										<div class="D-flx AI-C">
+											<span class="time f10">09.12AM </span><span><i class="bx bx-check-double f18 c-blue"></i></span>
+										</div>
+										<div class="D-flx AI-C G-5">
+											<div>
+												<span class="f10">You</span>
+											</div>
+											<div class="conv-img-cont">
+												<img class="conv-img" src="/images/p2.jpg" alt="profile/img" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- footer -->
+					<div class="footer-parnet">
+						<div class="footer">
+							<div class="search-cont">
+								<div>
+									<span class="search-icon cp"><i class="bx bxs-microphone c-black f18"></i></span>
+								</div>
+								<input class="input" type="serach" placeholder="Message" />
+							</div>
+
+							<div>
+								<ul class="D-flx G-15">
+									<li>
+										<a href=""><i class="bx bx-link-alt f20 c-black"></i></a>
+									</li>
+									<li>
+										<a href=""><i class="bx bx-smile f20 c-black"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ///msg-container -->
+
+				<!--chat-list-container -->
+				<section class="chat-list-cont">
+					<div class="list-head">
+						<div class="chat-list-head">
+							<div class="D-flx AI-C JC-SB mB10 mT15">
+								<h5 class="defalut-tittle">Recently Connected</h5>
+								<i class="bx bx-x f23 c-black cp"></i>
+							</div>
+							<div class="">
+								<ul class="status-row-lists">
+									<li class="status-row-list">
+										<a class="status-row-link" href="">
+											<div class="prof-img-cont online">
+												<img class="profile-img" src="./images/p4.jpeg" alt="profile/img" />
+											</div>
+											<div>
+												<span class="defalut-tittle-sm">James</span>
+											</div>
+										</a>
+									</li>
+
+									<li class="status-row-list">
+										<a class="status-row-link" href="">
+											<div class="prof-img-cont online">
+												<img class="profile-img" src="./images/p5.jpeg" alt="profile/img" />
+											</div>
+											<div><span class="defalut-tittle-sm">albus</span></div>
+										</a>
+									</li>
+
+									<li class="status-row-list">
+										<a class="status-row-link" href="">
+											<div class="prof-img-cont online">
+												<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+											</div>
+											<div><span class="defalut-tittle-sm">draco</span></div>
+										</a>
+									</li>
+
+									<li class="status-row-list mute">
+										<a class="status-row-link" href="">
+											<div class="prof-img-cont">
+												<img class="profile-img" src="./images/p1c.jpg" alt="profile/img" />
+											</div>
+											<div><span class="defalut-tittle-sm">rocky</span></div>
+										</a>
+									</li>
+
+									<li class="status-row-list mute">
+										<a class="status-row-link" href="">
+											<div class="prof-img-cont">
+												<img class="profile-img" src="./images/p6.jpg" alt="profile/img" />
+											</div>
+											<div><span class="defalut-tittle-sm">Elita</span></div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="mB10 chat-list-title">
+						<h5 class="defalut-tittle mB8">Chat</h5>
+						<div class="search-cont D-flx">
+							<div>
+								<span class="search-icon"><i class="bx bx-search f18"></i></span>
+							</div>
+							<input class="input" type="serach" placeholder="Message" />
+							<i class="bx bx-menu"></i>
+						</div>
+					</div>
+					<div class="chat-list-data">
+						<ul>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">09.55AM</span></div>
+								</a>
+							</li>
+
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p2.jpg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Draco</h5>
+											<span class="f12 c-grey">hey m,an whre are ...</span>
+										</div>
+									</div>
+
+									<div>
+										<div class="mB5">
+											<span class="c-grey f10">03.33AM</span>
+										</div>
+										<div class="msg-count-sm"><span class="c-white f12">1</span></div>
+									</div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">09.55AM</span></div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p7jpeg.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Dumbledoor</h5>
+											<span class="f12 c-grey">What say tyhat meab ...</span>
+										</div>
+									</div>
+									<div>
+										<div class="mB5">
+											<span class="c-grey f10">03.33AM</span>
+										</div>
+										<div class="msg-count-sm"><span class="c-white f12">1</span></div>
+									</div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">09.55AM</span></div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p5.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">Yesterday</span></div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">09.55AM</span></div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Wilpat</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">01/06/2023</span></div>
+								</a>
+							</li>
+
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p8.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Vijis</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">07/10/2020</span></div>
+								</a>
+							</li>
+
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p1c.jpg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sendray</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">10/02/10/2023</span></div>
+								</a>
+							</li>
+
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">09.55AM</span></div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div class="prof-img-cont">
+											<img class="profile-img" src="./images/p10.jpeg" alt="profile/img" />
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Sneape</h5>
+											<span class="f12 c-grey">We are thinking of ...</span>
+										</div>
+									</div>
+									<div><span class="c-grey f10">09.55AM</span></div>
+								</a>
+							</li>
+							<li class="chat-list">
+								<h5 class="defalut-tittle-sm mB8">Group</h5>
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div>
+											<i class="bx bx-cuboid c-black f30"></i>
+										</div>
+										<div>
+											<h5 class="defalut-tittle">Designer Bro's</h5>
+											<span class="f12 c-grey">Orders placed track ...</span>
+										</div>
+									</div>
+									<div>
+										<span class="c-grey f10">07.55AM</span>
+										<div class="msg-count-sm"><span class="c-white f12">3</span></div>
+									</div>
+								</a>
+							</li>
+
+							<li class="chat-list">
+								<a class="chat-link" href="">
+									<div class="chat-list-in">
+										<div>
+											<i class="bx bx-building-house c-black f30"></i>
+										</div>
+										<div>
+											<h5 class="defalut-tittle">DJR contruction</h5>
+											<span class="f12 c-grey">sands bill oilicsd...</span>
+										</div>
+									</div>
+									<div>
+										<span class="c-grey f10">07.55AM</span>
+										<div class="msg-count-sm"><span class="c-white f12">3</span></div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- js -->
+		<script src="/js/script.js"></script>
+	</body>
+</html>

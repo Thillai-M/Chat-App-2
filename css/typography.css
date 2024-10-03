@@ -1,0 +1,16 @@
+
+.defalut-tittle{
+    color: var(--c-black);
+    font-family: var(--font-semibold);
+}
+.defalut-tittle-sm{
+    color: var(--c-black);
+    font-size: 14px;
+    padding-left: 4px;
+}
+::placeholder{
+    color: var(--c-grey);
+}
+
+.fw600{font-weight: 600;}
+.cp{cursor: pointer;}
