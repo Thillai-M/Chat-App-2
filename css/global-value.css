@@ -19,8 +19,9 @@
     background-color:var(--c-white-grey-10);
     border-radius: 4px;
 }
-.input{
+.search-input-sm{
     width: 100%;
+    height: 100%;
     padding-left: 16px;
     border: none;
     outline: none;
