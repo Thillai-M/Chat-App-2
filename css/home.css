@@ -121,14 +121,18 @@
 }
 
 .msg-conversaion{
-    padding: 10px;
     background-color: var(--c-white);
     border-radius: var(--br-radius-lm);
 }
+
 .msg-conversaion-opp{
-    padding: 10px;
     background-color: var(--c-green);
     border-radius: var(--br-radius-lm);
+}
+.comon-msg{
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 .conv-img-cont{
     width: 20px;

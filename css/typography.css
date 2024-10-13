@@ -12,5 +12,13 @@
     color: var(--c-grey);
 }
 
+.prof-msg{
+    display: inline-block;
+    overflow:hidden;
+    width: 140px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .fw600{font-weight: 600;}
 .cp{cursor: pointer;}
