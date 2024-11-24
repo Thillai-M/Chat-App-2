@@ -6,14 +6,14 @@
 
 }
 .profile-cont-header{
-    height: 50px;
+    height: var(--h-prof-cont-head);
     display: flex;
+    padding: 0 15px;
     align-items: center;
-    gap: 15px;
     color: var(--c-white);
 }
 .profile-setting{
-    height: calc(100% - 210px);
+    height: calc(100vh - (var(--h-prof-cont-head) + var(--h-side-prof)));
     overflow-y: auto;
     padding: 0px 8px;
     border-right: 2px solid var(--c-dark-blue-10);
@@ -49,28 +49,13 @@
     opacity: .1;
 }
 
-
-
-.show-online{
+.chat-icon{
     height: 20px;
-    width: 35px;
-    position: relative;
-    border-radius: var(--br-radius-lm);
-    background-color: var(--c-green-10);
-    cursor: pointer;
+    width: auto;
 }
 
-.show-online::after{
-    content: '';
-    position: absolute;
-    height:21px;
-    width: 21px;
-    left:0px;
-    border-radius: var(--br-radius-full);
-    background-color: var(--c-green);
-}
 .side-prof{
-    height: 120px;
+    height: var(--h-side-prof);
 }
 .prof-img-cont{
     width: 40px;
@@ -114,10 +99,15 @@
 }
 .profile-cont-link{
     padding: 0px 0px;
-}
 
+}
+.profile-cont-list:hover{
+    background-color:var(--c-dark-blue-10)
+}
 .profile-cont-list{
-    margin-bottom:30px ;
+    transition: var(--default-trans);
+    padding: 10px;
+    border-radius: var(--br-radius-sm);
 }
 .icon-grps{
     display: flex;
