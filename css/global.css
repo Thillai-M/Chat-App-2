@@ -8,7 +8,7 @@
 
 body{
     color: var(--c-grey);
-    background-color: var(--c-black);
+    background-color: var(--c-dark-grey);
     font-size: 16px;
     font-family: "Puvi_Regular";
     line-height: 1.3;
