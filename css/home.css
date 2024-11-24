@@ -181,7 +181,6 @@
 }
 
 .chat-list{
-    padding: 8px;
     border-radius: var(--br-radius-sm);
     border-bottom: 1px solid var(--c-grey-20);
 }
@@ -238,12 +237,13 @@
 
 .chat-link{
     display: flex;
+    padding: 8px;
     align-items: center;;
     justify-content: space-between;
     border-radius: var(--br-radius-sm);
     transition: var(--default-trans);
 }
-.chat-list:hover{
+.chat-link:hover{
     background-color:var(--c-white-grey-10);
 
 }
